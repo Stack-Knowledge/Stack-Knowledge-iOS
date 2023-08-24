@@ -28,6 +28,7 @@
 		3D07508B2A97B9330044B83A /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D07507F2A97B9330044B83A /* Roboto-Regular.ttf */; };
 		3D07508C2A97B9330044B83A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0750802A97B9330044B83A /* Roboto-Medium.ttf */; };
 		3D07508D2A97B9330044B83A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0750812A97B9330044B83A /* Roboto-Bold.ttf */; };
+		3D0750932A97C90D0044B83A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0750922A97C90D0044B83A /* BaseVC.swift */; };
 		3D95C88E2A816E730062E185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C88D2A816E730062E185 /* AppDelegate.swift */; };
 		3D95C8902A816E730062E185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C88F2A816E730062E185 /* SceneDelegate.swift */; };
 		3D95C8922A816E730062E185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8912A816E730062E185 /* ViewController.swift */; };
@@ -36,6 +37,9 @@
 		3D95C8A52A816E740062E185 /* Stack_Knowledge_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8A42A816E740062E185 /* Stack_Knowledge_iOSTests.swift */; };
 		3D95C8AF2A816E740062E185 /* Stack_Knowledge_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8AE2A816E740062E185 /* Stack_Knowledge_iOSUITests.swift */; };
 		3D95C8B12A816E740062E185 /* Stack_Knowledge_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8B02A816E740062E185 /* Stack_Knowledge_iOSUITestsLaunchTests.swift */; };
+		3D95C8BF2A81762F0062E185 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8BE2A81762F0062E185 /* BaseVC.swift */; };
+		3D95C8C02A81762F0062E185 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8BE2A81762F0062E185 /* BaseVC.swift */; };
+		3D95C8C12A81762F0062E185 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8BE2A81762F0062E185 /* BaseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,7 @@
 		3D07507F2A97B9330044B83A /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		3D0750802A97B9330044B83A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		3D0750812A97B9330044B83A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		3D0750922A97C90D0044B83A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		3D95C88A2A816E730062E185 /* Stack-Knowledge-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack-Knowledge-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D95C88D2A816E730062E185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D95C88F2A816E730062E185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 		3D95C8AA2A816E740062E185 /* Stack-Knowledge-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stack-Knowledge-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D95C8AE2A816E740062E185 /* Stack_Knowledge_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack_Knowledge_iOSUITests.swift; sourceTree = "<group>"; };
 		3D95C8B02A816E740062E185 /* Stack_Knowledge_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack_Knowledge_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3D95C8BE2A81762F0062E185 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		3D07508F2A97C8370044B83A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3D95C8BE2A81762F0062E185 /* BaseVC.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		3D0750912A97C8F60044B83A /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D0750922A97C90D0044B83A /* BaseVC.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
 		3D95C8812A816E730062E185 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +183,7 @@
 				3D95C8A32A816E740062E185 /* Stack-Knowledge-iOSTests */,
 				3D95C8AD2A816E740062E185 /* Stack-Knowledge-iOSUITests */,
 				3D95C88B2A816E730062E185 /* Products */,
+				3D07508F2A97C8370044B83A /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +200,7 @@
 		3D95C88C2A816E730062E185 /* Stack-Knowledge-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D0750912A97C8F60044B83A /* BaseVC */,
 				3D07508E2A97BBBA0044B83A /* Resources */,
 				3D95C88D2A816E730062E185 /* AppDelegate.swift */,
 				3D95C88F2A816E730062E185 /* SceneDelegate.swift */,
@@ -357,6 +381,8 @@
 				3D95C8922A816E730062E185 /* ViewController.swift in Sources */,
 				3D95C88E2A816E730062E185 /* AppDelegate.swift in Sources */,
 				3D95C8902A816E730062E185 /* SceneDelegate.swift in Sources */,
+				3D95C8BF2A81762F0062E185 /* BaseVC.swift in Sources */,
+				3D0750932A97C90D0044B83A /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D95C8A52A816E740062E185 /* Stack_Knowledge_iOSTests.swift in Sources */,
+				3D95C8C02A81762F0062E185 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D95C8B12A816E740062E185 /* Stack_Knowledge_iOSUITestsLaunchTests.swift in Sources */,
+				3D95C8C12A81762F0062E185 /* BaseVC.swift in Sources */,
 				3D95C8AF2A816E740062E185 /* Stack_Knowledge_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
