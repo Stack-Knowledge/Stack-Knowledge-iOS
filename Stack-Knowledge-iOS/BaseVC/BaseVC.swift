@@ -2,7 +2,7 @@
 //  BaseVC.swift
 //  Stack-Knowledge-iOS
 //
-//  Created by AnnKangHo on 2023/08/08.
+//  Created by AnnKangHo on 2023/08/25.
 //
 
 import UIKit
@@ -30,3 +30,4 @@ final class BaseVC: UIViewController {
     func delegate() {}
     func configNavigation() {}
 }
+
