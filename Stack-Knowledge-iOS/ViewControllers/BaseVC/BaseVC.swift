@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BaseVC: UIViewController {
+class BaseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +16,7 @@ final class BaseVC: UIViewController {
         addTarget()
         delegate()
         configNavigation()
+        setupBackgroundIfNotSet()
     }
     
     private func setupBackgroundIfNotSet() {
