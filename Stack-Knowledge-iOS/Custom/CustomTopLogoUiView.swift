@@ -26,7 +26,7 @@ class CustomTopLogoUiView: UIView {
     
     private let mainLogoLabel = UILabel().then {
         $0.text = "Stack Knowledge"
-        $0.font = UIFont(name: "Roboto-Bold", size: 18)
+        $0.font = UIFont(name: "Roboto-Medium", size: 18)
     }
     
     private func commonInit() {
@@ -36,13 +36,13 @@ class CustomTopLogoUiView: UIView {
     
     private func setLayout() {
         mainLogoUiImageView.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide).inset(9)
+            $0.top.equalTo(self.safeAreaLayoutGuide).inset(-35)
             $0.leading.equalTo(self.safeAreaLayoutGuide).inset(16)
             $0.width.height.equalTo(20)
         }
         
         mainLogoLabel.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide).inset(8)
+            $0.top.equalTo(self.safeAreaLayoutGuide).inset(-35)
             $0.leading.equalTo(self.mainLogoUiImageView.snp.trailing).offset(8)
         }
     }
