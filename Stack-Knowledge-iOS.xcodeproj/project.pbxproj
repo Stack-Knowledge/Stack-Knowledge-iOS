@@ -29,8 +29,15 @@
 		3D07508C2A97B9330044B83A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0750802A97B9330044B83A /* Roboto-Medium.ttf */; };
 		3D07508D2A97B9330044B83A /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0750812A97B9330044B83A /* Roboto-Bold.ttf */; };
 		3D0750932A97C90D0044B83A /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0750922A97C90D0044B83A /* BaseVC.swift */; };
+		3D24C7B12AA9FFC900954688 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24C7B02AA9FFC900954688 /* HomeVC.swift */; };
+		3D24C7B42AAA000E00954688 /* GAuthSignin in Frameworks */ = {isa = PBXBuildFile; productRef = 3D24C7B32AAA000E00954688 /* GAuthSignin */; };
+		3D24C7B72AADA12300954688 /* CustomTopLogoUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24C7B62AADA12300954688 /* CustomTopLogoUiView.swift */; };
 		3D7BC3692A9F8785001AF41E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC3682A9F8785001AF41E /* SnapKit */; };
 		3D7BC36C2A9F878D001AF41E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC36B2A9F878D001AF41E /* Then */; };
+		3D7EC8C72AB7BD4200B2356E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */; };
+		3D7EC8CF2AB7E29400B2356E /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8CE2AB7E29400B2356E /* UIColor+HexColor.swift */; };
+		3D7EC8D22AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */; };
+		3D7EC8D42AB7ED4C00B2356E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8D32AB7ED4C00B2356E /* CustomTabBarController.swift */; };
 		3D95C88E2A816E730062E185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C88D2A816E730062E185 /* AppDelegate.swift */; };
 		3D95C8902A816E730062E185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C88F2A816E730062E185 /* SceneDelegate.swift */; };
 		3D95C8922A816E730062E185 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8912A816E730062E185 /* LoginVC.swift */; };
@@ -83,6 +90,12 @@
 		3D0750802A97B9330044B83A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		3D0750812A97B9330044B83A /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		3D0750922A97C90D0044B83A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		3D24C7B02AA9FFC900954688 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3D24C7B62AADA12300954688 /* CustomTopLogoUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopLogoUiView.swift; sourceTree = "<group>"; };
+		3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D7EC8CE2AB7E29400B2356E /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
+		3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGradeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3D7EC8D32AB7ED4C00B2356E /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		3D95C88A2A816E730062E185 /* Stack-Knowledge-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack-Knowledge-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D95C88D2A816E730062E185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D95C88F2A816E730062E185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +118,7 @@
 			files = (
 				3D7BC3692A9F8785001AF41E /* SnapKit in Frameworks */,
 				3D7BC36C2A9F878D001AF41E /* Then in Frameworks */,
+				3D24C7B42AAA000E00954688 /* GAuthSignin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +170,7 @@
 		3D07508E2A97BBBA0044B83A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D7EC8CD2AB7E22500B2356E /* Extensions */,
 				3D0750632A97B7F90044B83A /* Fonts */,
 				3D95C8962A816E740062E185 /* Assets.xcassets */,
 				3D95C8982A816E740062E185 /* LaunchScreen.storyboard */,
@@ -179,9 +194,27 @@
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
+		3D24C7AF2AA9FFBC00954688 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D24C7B02AA9FFC900954688 /* HomeVC.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		3D24C7B52AADA0DA00954688 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3D24C7B62AADA12300954688 /* CustomTopLogoUiView.swift */,
+				3D7EC8D32AB7ED4C00B2356E /* CustomTabBarController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		3D7BC3652A9F8647001AF41E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3D24C7AF2AA9FFBC00954688 /* HomeVC */,
 				3D7BC3662A9F872C001AF41E /* LoginVC */,
 				3D0750912A97C8F60044B83A /* BaseVC */,
 			);
@@ -194,6 +227,31 @@
 				3D95C8912A816E730062E185 /* LoginVC.swift */,
 			);
 			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		3D7EC8C52AB7BD2000B2356E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D7EC8D02AB7E77200B2356E /* Home */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3D7EC8CD2AB7E22500B2356E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D7EC8CE2AB7E29400B2356E /* UIColor+HexColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D7EC8D02AB7E77200B2356E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */,
+				3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		3D95C8812A816E730062E185 = {
@@ -220,6 +278,8 @@
 		3D95C88C2A816E730062E185 /* Stack-Knowledge-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D7EC8C52AB7BD2000B2356E /* Cell */,
+				3D24C7B52AADA0DA00954688 /* Custom */,
 				3D7BC3652A9F8647001AF41E /* ViewControllers */,
 				3D07508E2A97BBBA0044B83A /* Resources */,
 				3D95C88D2A816E730062E185 /* AppDelegate.swift */,
@@ -265,6 +325,7 @@
 			packageProductDependencies = (
 				3D7BC3682A9F8785001AF41E /* SnapKit */,
 				3D7BC36B2A9F878D001AF41E /* Then */,
+				3D24C7B32AAA000E00954688 /* GAuthSignin */,
 			);
 			productName = "Stack-Knowledge-iOS";
 			productReference = 3D95C88A2A816E730062E185 /* Stack-Knowledge-iOS.app */;
@@ -341,6 +402,7 @@
 			packageReferences = (
 				3D7BC3672A9F8785001AF41E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3D7BC36A2A9F878D001AF41E /* XCRemoteSwiftPackageReference "Then" */,
+				3D24C7B22AAA000E00954688 /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */,
 			);
 			productRefGroup = 3D95C88B2A816E730062E185 /* Products */;
 			projectDirPath = "";
@@ -405,8 +467,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7EC8C72AB7BD4200B2356E /* HomeCollectionViewCell.swift in Sources */,
 				3D95C8922A816E730062E185 /* LoginVC.swift in Sources */,
+				3D7EC8D42AB7ED4C00B2356E /* CustomTabBarController.swift in Sources */,
+				3D24C7B12AA9FFC900954688 /* HomeVC.swift in Sources */,
+				3D7EC8D22AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift in Sources */,
+				3D24C7B72AADA12300954688 /* CustomTopLogoUiView.swift in Sources */,
 				3D95C88E2A816E730062E185 /* AppDelegate.swift in Sources */,
+				3D7EC8CF2AB7E29400B2356E /* UIColor+HexColor.swift in Sources */,
 				3D95C8902A816E730062E185 /* SceneDelegate.swift in Sources */,
 				3D0750932A97C90D0044B83A /* BaseVC.swift in Sources */,
 			);
@@ -746,6 +814,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3D24C7B22AAA000E00954688 /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GSM-MSG/GAuthSignin-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
 		3D7BC3672A9F8785001AF41E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -765,6 +841,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3D24C7B32AAA000E00954688 /* GAuthSignin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D24C7B22AAA000E00954688 /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */;
+			productName = GAuthSignin;
+		};
 		3D7BC3682A9F8785001AF41E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3D7BC3672A9F8785001AF41E /* XCRemoteSwiftPackageReference "SnapKit" */;
