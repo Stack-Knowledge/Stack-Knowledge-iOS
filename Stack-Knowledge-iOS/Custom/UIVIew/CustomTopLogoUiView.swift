@@ -11,13 +11,12 @@ import SnapKit
 class CustomTopLogoUiView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        commonInit()
+        addView()
         setLayout()
     }
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        commonInit()
-        setLayout()
+        fatalError("init(coder:) has not been implemented")
     }
     
     private let mainLogoUiImageView = UIImageView().then {
@@ -29,7 +28,7 @@ class CustomTopLogoUiView: UIView {
         $0.font = UIFont(name: "Roboto-Medium", size: 18)
     }
     
-    private func commonInit() {
+    private func addView() {
         addSubview(mainLogoLabel)
         addSubview(mainLogoUiImageView)
     }
