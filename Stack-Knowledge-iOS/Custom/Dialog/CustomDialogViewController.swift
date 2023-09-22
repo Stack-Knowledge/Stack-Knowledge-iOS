@@ -9,6 +9,8 @@ import UIKit
 
 class CustomDialogViewController: BaseVC {
     
+    var okButtonAction: (() -> Void)?
+    
     let dialogView = UIView().then {
         $0.backgroundColor = .white
         $0.layer.cornerRadius = 20
@@ -84,17 +86,19 @@ class CustomDialogViewController: BaseVC {
     }
     
     @objc func closeButtonTapped() {
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             self.view.alpha = 0.0
         }) { (_) in
             self.dismiss(animated: false, completion: nil)
         }
     }
-    
-    @objc func okButtonTapped() {
-        let customTabBarController = CustomTabBarController()
-        customTabBarController.modalPresentationStyle = .fullScreen
-        self.present(customTabBarController, animated: true)
 
+    @objc func okButtonTapped() {
+        UIView.animate(withDuration: 0.2, animations: {
+            self.view.alpha = 0.0
+        }) { (_) in
+            self.dismiss(animated: false, completion: nil)
+            self.okButtonAction?()
+        }
     }
 }
