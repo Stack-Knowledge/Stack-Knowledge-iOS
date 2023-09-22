@@ -18,7 +18,6 @@ class CustomTabBarController: UITabBarController {
         appearance.stackedLayoutAppearance.normal.iconColor = .gray
         appearance.stackedLayoutAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue]
         tabBar.standardAppearance = appearance
-        
         let homeNavigationController = UINavigationController(rootViewController: HomeVC())
         homeNavigationController.tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "GotoHomePage"), selectedImage: nil)
         let problemNavigationController = UINavigationController(rootViewController: WholeMissionVC())
