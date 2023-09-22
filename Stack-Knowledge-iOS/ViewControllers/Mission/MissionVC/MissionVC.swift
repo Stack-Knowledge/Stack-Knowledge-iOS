@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProblemVC: BaseVC {
+class MissionVC: BaseVC {
     
     var timer: Timer?
     var minutes = 13
@@ -27,41 +27,101 @@ class ProblemVC: BaseVC {
         $0.textAlignment = .center
     }
     
-    private let problemLabel = UILabel().then {
+    private let missionLabel = UILabel().then {
         $0.text = "문제"
         $0.font = UIFont(name: "Pretendard-Medium", size: 18)
     }
+    
+    private let missionExplainLabel = UILabel().then {
+        $0.text = "북학파에 대한 배경을 적고 일이 일어난 순서를 알맞게 서술하시오."
+        $0.font = UIFont(name: "Pretendard-Regular", size: 16)
+        $0.numberOfLines = 0
+        $0.lineBreakMode = .byWordWrapping
+        $0.sizeToFit()
+    }
+    
+    private let missionTextView = UITextView().then {
+        $0.backgroundColor = UIColor(red: 235, green: 235, blue: 235)
+        $0.layer.cornerRadius = 10
+        $0.text = "답변을 작성해 주시기 바랍니다."
+        $0.font = UIFont(name: "Pretendard-Medium", size: 14)
+        $0.textColor = .placeholderText
+        $0.textContainerInset = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
+    }
+    
+    private let customStackKnowledgeButton = CustomStackKnowledgeButton(description: "제출하기")
     
     override func addView() {
         view.addSubview(customTopLogoUiView)
         view.addSubview(circleUiView)
         view.addSubview(timerLabel)
-        view.addSubview(problemLabel)
+        view.addSubview(missionLabel)
+        view.addSubview(missionExplainLabel)
+        view.addSubview(missionTextView)
+        view.addSubview(customStackKnowledgeButton)
     }
     
     override func setLayout() {
         circleUiView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(69)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(24)
             $0.width.height.equalTo(170)
         }
         
         timerLabel.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(130)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(85)
             $0.centerX.equalToSuperview()
         }
-    
-        problemLabel.snp.makeConstraints {
+        
+        missionLabel.snp.makeConstraints {
             $0.top.equalTo(circleUiView.snp.bottom).offset(40)
             $0.leading.equalTo(view.safeAreaLayoutGuide).inset(16)
+        }
+        
+        missionExplainLabel.snp.makeConstraints {
+            $0.top.equalTo(missionLabel.snp.bottom).offset(12)
+            $0.leading.trailing.equalToSuperview().inset(16)
+        }
+        
+        missionTextView.snp.makeConstraints {
+            $0.top.equalTo(missionLabel.snp.bottom).offset(90)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(180)
+        }
+        
+        customStackKnowledgeButton.snp.makeConstraints {
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(28)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(60)
         }
     }
     
     override func addTarget() {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        customStackKnowledgeButton.addTarget(self, action: #selector(customStackKnowledgeButtonTapped), for: .touchUpInside)
+    }
+    
+    override func delegate() {
+        tabBarController?.delegate = self
+        missionTextView.delegate = self
     }
     
     @objc func updateTimer() {
+        if minutes == 0 && seconds == 0 {
+            let customDialogTimeOverViewController = CustomDialogTimeOverViewController()
+            customDialogTimeOverViewController.okButtonAction = { [weak self] in
+                customDialogTimeOverViewController.dismiss(animated: false, completion: nil)
+                self?.transitionToHomeVC()
+            }
+            customDialogTimeOverViewController.modalPresentationStyle = .overCurrentContext
+            customDialogTimeOverViewController.view.alpha = 0.0
+            present(customDialogTimeOverViewController, animated: false) {
+                UIView.animate(withDuration: 0.3) {
+                    customDialogTimeOverViewController.view.alpha = 1.0
+                }
+            }
+        }
+        
         if seconds > 0 {
             seconds -= 1
         } else if minutes > 0 {
@@ -78,4 +138,41 @@ class ProblemVC: BaseVC {
         let timeString = String(format: "%02d : %02d", minutes, seconds)
         timerLabel.text = timeString
     }
+    
+    @objc func customStackKnowledgeButtonTapped(_ sender: UIButton) {
+        let customDialogViewController = CustomDialogViewController()
+        customDialogViewController.okButtonAction = { [weak self] in
+            customDialogViewController.dismiss(animated: false, completion: nil)
+            self?.transitionToHomeVC()
+        }
+        
+        customDialogViewController.modalPresentationStyle = .overCurrentContext
+        customDialogViewController.view.alpha = 0.0
+        present(customDialogViewController, animated: false) {
+            UIView.animate(withDuration: 0.3) {
+                customDialogViewController.view.alpha = 1.0
+            }
+        }
+    }
+    
+    func transitionToHomeVC() {
+        let wholeMissionVC = WholeMissionVC()
+        navigationController?.setViewControllers([wholeMissionVC], animated: true)
+    }
 }
+
+extension MissionVC: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        guard textView.textColor == .placeholderText else { return }
+        textView.textColor = .label
+        textView.text = nil
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "텍스트 입력"
+            textView.textColor = .placeholderText
+        }
+    }
+}
+
