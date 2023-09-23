@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class BaseVC: UIViewController {
+class BaseVC: UIViewController, UITabBarDelegate, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -73,18 +73,18 @@ class HomeVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegateFlowLa
     
     override func setLayout() {
         bannerImageView.snp.makeConstraints {
-            $0.top.equalTo(customTopLogoUiView.snp.bottom).offset(65)
+            $0.top.equalTo(customTopLogoUiView.snp.bottom).offset(80)
             $0.leading.trailing.equalToSuperview().inset(0)
             //$0.height.equalTo(180)
         }
         
         solveTimeExampleLabel.snp.makeConstraints {
-            $0.bottom.equalTo(bannerImageView.snp.bottom).inset(8)
+            $0.bottom.equalTo(bannerImageView.snp.bottom).offset(0)
             $0.leading.equalTo(view.safeAreaLayoutGuide).inset(16)
         }
         
         solveProblemLabel.snp.makeConstraints {
-            $0.top.equalTo(solveTimeExampleLabel.snp.bottom).offset(24)
+            $0.top.equalTo(solveTimeExampleLabel.snp.bottom).offset(32)
             $0.leading.equalTo(view.safeAreaLayoutGuide).inset(16)
         }
         
