@@ -32,12 +32,18 @@
 		3D24C7B12AA9FFC900954688 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24C7B02AA9FFC900954688 /* HomeVC.swift */; };
 		3D24C7B42AAA000E00954688 /* GAuthSignin in Frameworks */ = {isa = PBXBuildFile; productRef = 3D24C7B32AAA000E00954688 /* GAuthSignin */; };
 		3D24C7B72AADA12300954688 /* CustomTopLogoUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D24C7B62AADA12300954688 /* CustomTopLogoUiView.swift */; };
+		3D757AFD2ABB16AC00B30748 /* CustomStackKnowledgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757AFC2ABB16AC00B30748 /* CustomStackKnowledgeButton.swift */; };
+		3D757B0F2ABC3C2400B30748 /* CustomDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B0E2ABC3C2400B30748 /* CustomDialogViewController.swift */; };
+		3D757B122ABD58A900B30748 /* CustomDialogTimeOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B112ABD58A900B30748 /* CustomDialogTimeOverViewController.swift */; };
 		3D7BC3692A9F8785001AF41E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC3682A9F8785001AF41E /* SnapKit */; };
 		3D7BC36C2A9F878D001AF41E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC36B2A9F878D001AF41E /* Then */; };
 		3D7EC8C72AB7BD4200B2356E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */; };
 		3D7EC8CF2AB7E29400B2356E /* UIColor+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8CE2AB7E29400B2356E /* UIColor+HexColor.swift */; };
 		3D7EC8D22AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */; };
 		3D7EC8D42AB7ED4C00B2356E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8D32AB7ED4C00B2356E /* CustomTabBarController.swift */; };
+		3D9442C62AB86973009BDF68 /* MissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9442C52AB86973009BDF68 /* MissionVC.swift */; };
+		3D9442CA2ABACCF3009BDF68 /* WholeMissionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9442C92ABACCF3009BDF68 /* WholeMissionVC.swift */; };
+		3D9442CD2ABAEADD009BDF68 /* WholeMissionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9442CC2ABAEADD009BDF68 /* WholeMissionCollectionViewCell.swift */; };
 		3D95C88E2A816E730062E185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C88D2A816E730062E185 /* AppDelegate.swift */; };
 		3D95C8902A816E730062E185 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C88F2A816E730062E185 /* SceneDelegate.swift */; };
 		3D95C8922A816E730062E185 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8912A816E730062E185 /* LoginVC.swift */; };
@@ -92,10 +98,16 @@
 		3D0750922A97C90D0044B83A /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		3D24C7B02AA9FFC900954688 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3D24C7B62AADA12300954688 /* CustomTopLogoUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopLogoUiView.swift; sourceTree = "<group>"; };
+		3D757AFC2ABB16AC00B30748 /* CustomStackKnowledgeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackKnowledgeButton.swift; sourceTree = "<group>"; };
+		3D757B0E2ABC3C2400B30748 /* CustomDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogViewController.swift; sourceTree = "<group>"; };
+		3D757B112ABD58A900B30748 /* CustomDialogTimeOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogTimeOverViewController.swift; sourceTree = "<group>"; };
 		3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D7EC8CE2AB7E29400B2356E /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGradeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D7EC8D32AB7ED4C00B2356E /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		3D9442C52AB86973009BDF68 /* MissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionVC.swift; sourceTree = "<group>"; };
+		3D9442C92ABACCF3009BDF68 /* WholeMissionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholeMissionVC.swift; sourceTree = "<group>"; };
+		3D9442CC2ABAEADD009BDF68 /* WholeMissionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WholeMissionCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D95C88A2A816E730062E185 /* Stack-Knowledge-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stack-Knowledge-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D95C88D2A816E730062E185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D95C88F2A816E730062E185 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,15 +217,51 @@
 		3D24C7B52AADA0DA00954688 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				3D24C7B62AADA12300954688 /* CustomTopLogoUiView.swift */,
-				3D7EC8D32AB7ED4C00B2356E /* CustomTabBarController.swift */,
+				3D757B102ABD1E7D00B30748 /* Dialog */,
+				3D757B0D2ABC292700B30748 /* TabBar */,
+				3D757B0B2ABC291300B30748 /* UIVIew */,
+				3D757AFA2ABB167B00B30748 /* Button */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		3D757AFA2ABB167B00B30748 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				3D757AFC2ABB16AC00B30748 /* CustomStackKnowledgeButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		3D757B0B2ABC291300B30748 /* UIVIew */ = {
+			isa = PBXGroup;
+			children = (
+				3D24C7B62AADA12300954688 /* CustomTopLogoUiView.swift */,
+			);
+			path = UIVIew;
+			sourceTree = "<group>";
+		};
+		3D757B0D2ABC292700B30748 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3D7EC8D32AB7ED4C00B2356E /* CustomTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3D757B102ABD1E7D00B30748 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				3D757B0E2ABC3C2400B30748 /* CustomDialogViewController.swift */,
+				3D757B112ABD58A900B30748 /* CustomDialogTimeOverViewController.swift */,
+			);
+			path = Dialog;
 			sourceTree = "<group>";
 		};
 		3D7BC3652A9F8647001AF41E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3D9442C72AB9EA0E009BDF68 /* Mission */,
 				3D24C7AF2AA9FFBC00954688 /* HomeVC */,
 				3D7BC3662A9F872C001AF41E /* LoginVC */,
 				3D0750912A97C8F60044B83A /* BaseVC */,
@@ -232,6 +280,7 @@
 		3D7EC8C52AB7BD2000B2356E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3D9442CB2ABAEAC1009BDF68 /* Mission */,
 				3D7EC8D02AB7E77200B2356E /* Home */,
 			);
 			path = Cell;
@@ -252,6 +301,39 @@
 				3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		3D9442C42AB8695E009BDF68 /* MissionVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D9442C52AB86973009BDF68 /* MissionVC.swift */,
+			);
+			path = MissionVC;
+			sourceTree = "<group>";
+		};
+		3D9442C72AB9EA0E009BDF68 /* Mission */ = {
+			isa = PBXGroup;
+			children = (
+				3D9442C82ABACCD8009BDF68 /* WholeMissionVC */,
+				3D9442C42AB8695E009BDF68 /* MissionVC */,
+			);
+			path = Mission;
+			sourceTree = "<group>";
+		};
+		3D9442C82ABACCD8009BDF68 /* WholeMissionVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D9442C92ABACCF3009BDF68 /* WholeMissionVC.swift */,
+			);
+			path = WholeMissionVC;
+			sourceTree = "<group>";
+		};
+		3D9442CB2ABAEAC1009BDF68 /* Mission */ = {
+			isa = PBXGroup;
+			children = (
+				3D9442CC2ABAEADD009BDF68 /* WholeMissionCollectionViewCell.swift */,
+			);
+			path = Mission;
 			sourceTree = "<group>";
 		};
 		3D95C8812A816E730062E185 = {
@@ -469,12 +551,18 @@
 			files = (
 				3D7EC8C72AB7BD4200B2356E /* HomeCollectionViewCell.swift in Sources */,
 				3D95C8922A816E730062E185 /* LoginVC.swift in Sources */,
+				3D9442C62AB86973009BDF68 /* MissionVC.swift in Sources */,
 				3D7EC8D42AB7ED4C00B2356E /* CustomTabBarController.swift in Sources */,
+				3D757B0F2ABC3C2400B30748 /* CustomDialogViewController.swift in Sources */,
 				3D24C7B12AA9FFC900954688 /* HomeVC.swift in Sources */,
 				3D7EC8D22AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift in Sources */,
+				3D757AFD2ABB16AC00B30748 /* CustomStackKnowledgeButton.swift in Sources */,
+				3D757B122ABD58A900B30748 /* CustomDialogTimeOverViewController.swift in Sources */,
 				3D24C7B72AADA12300954688 /* CustomTopLogoUiView.swift in Sources */,
 				3D95C88E2A816E730062E185 /* AppDelegate.swift in Sources */,
+				3D9442CD2ABAEADD009BDF68 /* WholeMissionCollectionViewCell.swift in Sources */,
 				3D7EC8CF2AB7E29400B2356E /* UIColor+HexColor.swift in Sources */,
+				3D9442CA2ABACCF3009BDF68 /* WholeMissionVC.swift in Sources */,
 				3D95C8902A816E730062E185 /* SceneDelegate.swift in Sources */,
 				3D0750932A97C90D0044B83A /* BaseVC.swift in Sources */,
 			);
