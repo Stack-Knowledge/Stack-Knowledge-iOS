@@ -57,8 +57,6 @@
 		3D95C8A52A816E740062E185 /* Stack_Knowledge_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8A42A816E740062E185 /* Stack_Knowledge_iOSTests.swift */; };
 		3D95C8AF2A816E740062E185 /* Stack_Knowledge_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8AE2A816E740062E185 /* Stack_Knowledge_iOSUITests.swift */; };
 		3D95C8B12A816E740062E185 /* Stack_Knowledge_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8B02A816E740062E185 /* Stack_Knowledge_iOSUITestsLaunchTests.swift */; };
-		3D95C8C02A81762F0062E185 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8BE2A81762F0062E185 /* BaseVC.swift */; };
-		3D95C8C12A81762F0062E185 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95C8BE2A81762F0062E185 /* BaseVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -641,7 +639,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D95C8A52A816E740062E185 /* Stack_Knowledge_iOSTests.swift in Sources */,
-				3D95C8C02A81762F0062E185 /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +647,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D95C8B12A816E740062E185 /* Stack_Knowledge_iOSUITestsLaunchTests.swift in Sources */,
-				3D95C8C12A81762F0062E185 /* BaseVC.swift in Sources */,
 				3D95C8AF2A816E740062E185 /* Stack_Knowledge_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,7 +728,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -786,7 +782,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -810,7 +806,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -838,7 +834,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -861,7 +857,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6WZYJKR3V9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KHcoding.Stack-Knowledge-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -881,7 +877,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6WZYJKR3V9;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KHcoding.Stack-Knowledge-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -900,6 +896,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6WZYJKR3V9;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KHcoding.Stack-Knowledge-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -918,6 +915,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6WZYJKR3V9;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.KHcoding.Stack-Knowledge-iOSUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
