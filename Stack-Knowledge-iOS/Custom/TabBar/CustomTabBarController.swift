@@ -22,7 +22,7 @@ class CustomTabBarController: UITabBarController {
         homeNavigationController.tabBarItem = UITabBarItem(title: "홈", image: UIImage(named: "GotoHomePage"), selectedImage: nil)
         let problemNavigationController = UINavigationController(rootViewController: WholeMissionVC())
         problemNavigationController.tabBarItem = UITabBarItem(title: "문제", image: UIImage(named: "GotoProblemPage"), selectedImage: nil)
-        let storeNavigationController = UINavigationController(rootViewController: HomeVC())
+        let storeNavigationController = UINavigationController(rootViewController: ShopVC())
         storeNavigationController.tabBarItem = UITabBarItem(title: "상점", image: UIImage(named: "GotoStorePage"), selectedImage: nil)
         let rankingNavigationController = UINavigationController(rootViewController: HomeVC())
         rankingNavigationController.tabBarItem = UITabBarItem(title: "랭킹", image: UIImage(named: "GotoRankingPage"), selectedImage: nil)

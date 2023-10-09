@@ -13,7 +13,7 @@ class WholeMissionVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelega
     
     private let customTopLogoUiView = CustomTopLogoUiView()
     
-    private let WholeMissionCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout().then ({
+    private let wholeMissionCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout().then ({
         $0.minimumInteritemSpacing = 16
         $0.sectionInset = UIEdgeInsets(top: 9, left: 16, bottom: 0, right: 16)
     })).then {
@@ -23,11 +23,11 @@ class WholeMissionVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelega
     
     override func addView() {
         view.addSubview(customTopLogoUiView)
-        view.addSubview(WholeMissionCollectionView)
+        view.addSubview(wholeMissionCollectionView)
     }
     
     override func setLayout() {
-        WholeMissionCollectionView.snp.makeConstraints {
+        wholeMissionCollectionView.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaLayoutGuide).offset(29)
             $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(633)
@@ -35,9 +35,9 @@ class WholeMissionVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelega
     }
     
     override func delegate() {
-        WholeMissionCollectionView.delegate = self
-        WholeMissionCollectionView.dataSource = self
-        WholeMissionCollectionView.register(WholeMissionCollectionViewCell.self, forCellWithReuseIdentifier: wholeMissionCellReuseIdentifier)
+        wholeMissionCollectionView.delegate = self
+        wholeMissionCollectionView.dataSource = self
+        wholeMissionCollectionView.register(WholeMissionCollectionViewCell.self, forCellWithReuseIdentifier: wholeMissionCellReuseIdentifier)
         
     }
     
