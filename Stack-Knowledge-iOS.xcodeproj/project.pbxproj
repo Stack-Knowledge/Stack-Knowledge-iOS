@@ -40,6 +40,8 @@
 		3D757B1A2AC0236B00B30748 /* ShopBottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B192AC0236B00B30748 /* ShopBottomSheetVC.swift */; };
 		3D757B1D2AC15FB700B30748 /* MerchandiseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B1C2AC15FB700B30748 /* MerchandiseCollectionViewCell.swift */; };
 		3D757B1F2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B1E2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift */; };
+		3D757B2B2AD7DB8800B30748 /* RankingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B2A2AD7DB8800B30748 /* RankingVC.swift */; };
+		3D757B2E2ADBE11F00B30748 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B2D2ADBE11F00B30748 /* RankingTableViewCell.swift */; };
 		3D7BC3692A9F8785001AF41E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC3682A9F8785001AF41E /* SnapKit */; };
 		3D7BC36C2A9F878D001AF41E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC36B2A9F878D001AF41E /* Then */; };
 		3D7EC8C72AB7BD4200B2356E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */; };
@@ -109,6 +111,8 @@
 		3D757B192AC0236B00B30748 /* ShopBottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopBottomSheetVC.swift; sourceTree = "<group>"; };
 		3D757B1C2AC15FB700B30748 /* MerchandiseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchandiseCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D757B1E2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogPurchaseViewController.swift; sourceTree = "<group>"; };
+		3D757B2A2AD7DB8800B30748 /* RankingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingVC.swift; sourceTree = "<group>"; };
+		3D757B2D2ADBE11F00B30748 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D7EC8CE2AB7E29400B2356E /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGradeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -344,9 +348,35 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		3D757B282AD7DB6800B30748 /* RankingVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D757B2C2ADBE10800B30748 /* Cell */,
+				3D757B292AD7DB7A00B30748 /* VC */,
+			);
+			path = RankingVC;
+			sourceTree = "<group>";
+		};
+		3D757B292AD7DB7A00B30748 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3D757B2A2AD7DB8800B30748 /* RankingVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3D757B2C2ADBE10800B30748 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D757B2D2ADBE11F00B30748 /* RankingTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		3D7BC3652A9F8647001AF41E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3D757B282AD7DB6800B30748 /* RankingVC */,
 				3D757B132ABED06C00B30748 /* ShopVC */,
 				3D9442C72AB9EA0E009BDF68 /* Mission */,
 				3D24C7AF2AA9FFBC00954688 /* HomeVC */,
@@ -620,6 +650,7 @@
 				3D24C7B12AA9FFC900954688 /* HomeVC.swift in Sources */,
 				3D7EC8D22AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift in Sources */,
 				3D757B152ABED08000B30748 /* ShopVC.swift in Sources */,
+				3D757B2E2ADBE11F00B30748 /* RankingTableViewCell.swift in Sources */,
 				3D757AFD2ABB16AC00B30748 /* CustomStackKnowledgeButton.swift in Sources */,
 				3D757B1F2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift in Sources */,
 				3D757B122ABD58A900B30748 /* CustomDialogTimeOverViewController.swift in Sources */,
@@ -631,6 +662,7 @@
 				3D9442CA2ABACCF3009BDF68 /* WholeMissionVC.swift in Sources */,
 				3D95C8902A816E730062E185 /* SceneDelegate.swift in Sources */,
 				3D0750932A97C90D0044B83A /* BaseVC.swift in Sources */,
+				3D757B2B2AD7DB8800B30748 /* RankingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
