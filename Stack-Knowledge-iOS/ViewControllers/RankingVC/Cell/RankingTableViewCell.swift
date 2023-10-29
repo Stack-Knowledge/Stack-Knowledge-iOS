@@ -59,25 +59,25 @@ class RankingTableViewCell: UITableViewCell {
     
     func setLayout() {
         userImageView.snp.makeConstraints {
-            $0.leading.equalTo(safeAreaLayoutGuide).inset(32.42)
-            $0.top.equalTo(safeAreaLayoutGuide).inset(12)
-            $0.width.equalTo(41.83)
-            $0.height.equalTo(40)
+            $0.leading.equalTo(safeAreaLayoutGuide).inset(UIScreen.main.bounds.width / 12)
+            $0.top.equalTo(safeAreaLayoutGuide).inset(UIScreen.main.bounds.height / 70)
+            $0.width.equalTo(UIScreen.main.bounds.width / 9.3)
+            $0.height.equalTo(UIScreen.main.bounds.height / 21.1)
         }
         rowLabel.snp.makeConstraints {
-            $0.trailing.equalTo(userImageView.snp.leading).inset(-8.37)
-            $0.top.equalTo(safeAreaLayoutGuide).inset(18.8)
+            $0.trailing.equalTo(userImageView.snp.leading).inset(-(UIScreen.main.bounds.width / 46.6))
+            $0.top.equalTo(safeAreaLayoutGuide).inset(UIScreen.main.bounds.height / 44.9)
         }
         userNameLabel.snp.makeConstraints {
-            $0.leading.equalTo(userImageView.snp.trailing).offset(8.37)
+            $0.leading.equalTo(userImageView.snp.trailing).offset(UIScreen.main.bounds.width / 46.6)
             $0.centerY.equalToSuperview()
         }
         myMilesLabel.snp.makeConstraints {
-            $0.trailing.equalTo(safeAreaLayoutGuide).inset(42.14)
+            $0.trailing.equalTo(safeAreaLayoutGuide).inset(UIScreen.main.bounds.width / 9.25)
             $0.centerY.equalToSuperview()
         }
         milesLabel.snp.makeConstraints {
-            $0.leading.equalTo(myMilesLabel.snp.trailing).offset(2.09)
+            $0.leading.equalTo(myMilesLabel.snp.trailing).offset(UIScreen.main.bounds.width / 186.6)
             $0.centerY.equalToSuperview()
         }
     }

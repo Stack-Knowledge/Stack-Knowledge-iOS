@@ -73,31 +73,30 @@ class HomeVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegateFlowLa
     
     override func setLayout() {
         bannerImageView.snp.makeConstraints {
-            $0.top.equalTo(customTopLogoUiView.snp.bottom).offset(80)
+            $0.top.equalTo(customTopLogoUiView.snp.bottom).offset(view.bounds.height / 10.55)
             $0.leading.trailing.equalToSuperview().inset(0)
-            //$0.height.equalTo(180)
         }
         
         solveTimeExampleLabel.snp.makeConstraints {
             $0.bottom.equalTo(bannerImageView.snp.bottom).offset(0)
-            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(16)
+            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.width / 24.375)
         }
         
         solveProblemLabel.snp.makeConstraints {
-            $0.top.equalTo(solveTimeExampleLabel.snp.bottom).offset(32)
-            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(16)
+            $0.top.equalTo(solveTimeExampleLabel.snp.bottom).offset(view.bounds.height / 26.375)
+            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.width / 24.375)
         }
         
         homeCollectionView.snp.makeConstraints {
-            $0.top.equalTo(solveProblemLabel.snp.bottom).offset(8)
-            $0.leading.trailing.equalToSuperview().inset(16)
-            $0.height.equalTo(180)
+            $0.top.equalTo(solveProblemLabel.snp.bottom).offset(view.bounds.height / 105.5)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 24.375)
+            $0.height.equalTo(view.bounds.height / 4.7)
         }
         
         homeGradeCollectionView.snp.makeConstraints {
-            $0.top.equalTo(homeCollectionView.snp.bottom).offset(20)
-            $0.leading.trailing.equalToSuperview().inset(16)
-            $0.height.equalTo(180)
+            $0.top.equalTo(homeCollectionView.snp.bottom).offset(view.bounds.height / 42.2)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 24.375)
+            $0.height.equalTo(view.bounds.height / 4.7)
         }
     }
     
@@ -187,6 +186,6 @@ class HomeVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 116.77, height: 148)
+        return CGSize(width: view.bounds.width / 3.34, height: view.bounds.height / 6)
     }
 }

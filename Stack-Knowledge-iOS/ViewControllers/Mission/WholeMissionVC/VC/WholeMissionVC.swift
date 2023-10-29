@@ -28,9 +28,9 @@ class WholeMissionVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelega
     
     override func setLayout() {
         wholeMissionCollectionView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).offset(29)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(view.bounds.height / 29.1)
             $0.leading.trailing.equalToSuperview()
-            $0.height.equalTo(633)
+            $0.height.equalTo(view.bounds.height / 1.33)
         }
     }
     
@@ -60,7 +60,7 @@ class WholeMissionVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 164, height: 180)
+        return CGSize(width: view.bounds.width / 2.38, height: view.bounds.height / 4.69)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

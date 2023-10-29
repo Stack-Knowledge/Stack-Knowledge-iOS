@@ -38,6 +38,7 @@ class ShopVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegateFlowLa
         updateCustomStackKnowledgeButtonVisibility()
     }
     override func addView() {
+        print(view.bounds.width, view.bounds.height)
         view.addSubview(customTopLogoUiView)
         view.addSubview(nowMilesLabel)
         view.addSubview(merchandiseLabel)
@@ -47,25 +48,25 @@ class ShopVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegateFlowLa
     
     override func setLayout() {
         nowMilesLabel.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(60)
-            $0.leading.trailing.equalToSuperview().inset(122)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 14.1)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 3.2)
         }
         
         merchandiseLabel.snp.makeConstraints {
-            $0.top.equalTo(nowMilesLabel.snp.bottom).offset(124)
-            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(16)
+            $0.top.equalTo(nowMilesLabel.snp.bottom).offset(view.bounds.height / 6.806)
+            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.width / 24.375)
         }
         
         shopCollectionView.snp.makeConstraints {
-            $0.top.equalTo(merchandiseLabel.snp.bottom).offset(8)
+            $0.top.equalTo(merchandiseLabel.snp.bottom).offset(view.bounds.height / 105.5)
             $0.leading.trailing.equalToSuperview()
-            $0.height.equalTo(332)
+            $0.height.equalTo(view.bounds.height / 2.542)
         }
         
         customStackKnowledgeButton.snp.makeConstraints {
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(28)
-            $0.leading.trailing.equalToSuperview().inset(16)
-            $0.height.equalTo(60)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 30.14)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 24.375)
+            $0.height.equalTo(view.bounds.height / 14.1)
         }
     }
     
@@ -98,7 +99,7 @@ class ShopVC: BaseVC, UICollectionViewDataSource, UICollectionViewDelegateFlowLa
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 164, height: 202)
+        return CGSize(width: view.bounds.width / 2.38, height: view.bounds.height / 4.2)
     }
     
     @objc func customStackKnowledgeButtonTapped(_ sender: UIButton) {
