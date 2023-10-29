@@ -33,17 +33,18 @@ class RankingVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
     
     override func setLayout() {
         profileImageVIew.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(60)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 14.1)
             $0.centerX.equalToSuperview()
-            $0.width.height.equalTo(110)
+            $0.width.equalTo(view.bounds.width / 3.55)
+            $0.height.equalTo(view.bounds.height / 7.7)
         }
         rankingLabel.snp.makeConstraints {
-            $0.top.equalTo(profileImageVIew.snp.bottom).offset(85)
-            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(29)
+            $0.top.equalTo(profileImageVIew.snp.bottom).offset(view.bounds.height / 9.93)
+            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.width / 13.45)
         }
         rankingTableView.snp.makeConstraints {
-            $0.top.equalTo(rankingLabel.snp.bottom).offset(19)
-            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.top.equalTo(rankingLabel.snp.bottom).offset(view.bounds.height / 44.4)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 24.375)
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(0)
         }
     }
@@ -59,7 +60,7 @@ class RankingVC: BaseVC, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 64
+        return view.bounds.height / 13.1875
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! RankingTableViewCell

@@ -64,35 +64,35 @@ class MissionVC: BaseVC {
     override func setLayout() {
         circleUiView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(24)
-            $0.width.height.equalTo(170)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 35.2)
+            $0.width.height.equalTo(view.bounds.width / 2.3)
         }
         
         timerLabel.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(85)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 9.93)
             $0.centerX.equalToSuperview()
         }
         
         missionLabel.snp.makeConstraints {
-            $0.top.equalTo(circleUiView.snp.bottom).offset(40)
-            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(16)
+            $0.top.equalTo(circleUiView.snp.bottom).offset(view.bounds.height / 21.1)
+            $0.leading.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.width / 24.375)
         }
         
         missionExplainLabel.snp.makeConstraints {
-            $0.top.equalTo(missionLabel.snp.bottom).offset(12)
-            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.top.equalTo(missionLabel.snp.bottom).offset(view.bounds.height / 70.3)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 24.375)
         }
         
         missionTextView.snp.makeConstraints {
-            $0.top.equalTo(missionLabel.snp.bottom).offset(90)
-            $0.leading.trailing.equalToSuperview().inset(16)
-            $0.height.equalTo(180)
+            $0.top.equalTo(missionLabel.snp.bottom).offset(view.bounds.height / 9.4)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 24.375)
+            $0.height.equalTo(view.bounds.height / 4.7)
         }
         
         customStackKnowledgeButton.snp.makeConstraints {
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(28)
-            $0.leading.trailing.equalToSuperview().inset(16)
-            $0.height.equalTo(60)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 30.14)
+            $0.leading.trailing.equalToSuperview().inset(view.bounds.width / 24.375)
+            $0.height.equalTo(view.bounds.height / 14.1)
         }
     }
     

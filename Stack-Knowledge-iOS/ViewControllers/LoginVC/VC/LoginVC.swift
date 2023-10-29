@@ -45,34 +45,34 @@ class LoginVC: BaseVC {
         stackKnowledgeBackgroundImage1.snp.makeConstraints {
             $0.top.equalTo(view.safeAreaInsets).offset(0)
             $0.leading.equalTo(view.safeAreaInsets).offset(0)
-            $0.width.equalTo(361.97)
-            $0.height.equalTo(375)
+            $0.width.equalTo(view.bounds.width / 1.1)
+            $0.height.equalTo(view.bounds.height / 2.25)
         }
         
         stackKnowledgeBackgroundImage2.snp.makeConstraints {
             $0.bottom.equalTo(view.safeAreaInsets).inset(0)
             $0.trailing.equalTo(view.safeAreaInsets).inset(0)
-            $0.width.equalTo(270.37)
-            $0.height.equalTo(262.91)
+            $0.width.equalTo(view.bounds.width / 1.444)
+            $0.height.equalTo(view.bounds.height / 3.21)
         }
         
         stackKnowledgeLogoImageView.snp.makeConstraints {
-            $0.width.equalTo(50)
-            $0.height.equalTo(50)
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(180)
+            $0.width.equalTo(view.bounds.width / 7.8)
+            $0.height.equalTo(view.bounds.height / 16.9)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 4.69)
             $0.centerX.equalToSuperview()
         }
         
         stackKnowledgeLogoLabel.snp.makeConstraints {
-            $0.top.equalTo(stackKnowledgeLogoImageView.snp.bottom).offset(20)
+            $0.top.equalTo(stackKnowledgeLogoImageView.snp.bottom).offset(view.bounds.height / 42.2)
             $0.centerX.equalToSuperview()
         }
         
         gauthButton.snp.makeConstraints {
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(102)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 8.3)
              $0.centerX.equalToSuperview()
-             $0.width.equalTo(319)
-             $0.height.equalTo(50)
+             $0.width.equalTo(view.bounds.width / 1.22)
+            $0.height.equalTo(view.bounds.height / 16.88)
         }
     }
     
