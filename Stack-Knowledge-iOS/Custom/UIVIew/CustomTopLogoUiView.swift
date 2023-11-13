@@ -35,13 +35,13 @@ class CustomTopLogoUiView: UIView {
     
     private func setLayout() {
         mainLogoUiImageView.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide).inset(-35)
+            $0.top.equalTo(self.safeAreaLayoutGuide).inset(-UIScreen.main.bounds.height / 11.6)
             $0.leading.equalTo(self.safeAreaLayoutGuide).inset(16)
             $0.width.height.equalTo(20)
         }
         
         mainLogoLabel.snp.makeConstraints {
-            $0.top.equalTo(self.safeAreaLayoutGuide).inset(-35)
+            $0.top.equalTo(self.safeAreaLayoutGuide).inset(-UIScreen.main.bounds.height / 11.6)
             $0.leading.equalTo(self.mainLogoUiImageView.snp.trailing).offset(8)
         }
     }
