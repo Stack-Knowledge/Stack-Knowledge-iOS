@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct GauthDataModel: Codable {
+    let accessToken: String
+    let refreshToken: String
+    let expiredAt: String
+    let authority: String
+}
