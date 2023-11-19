@@ -42,6 +42,10 @@
 		3D757B1F2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B1E2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift */; };
 		3D757B2B2AD7DB8800B30748 /* RankingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B2A2AD7DB8800B30748 /* RankingVC.swift */; };
 		3D757B2E2ADBE11F00B30748 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B2D2ADBE11F00B30748 /* RankingTableViewCell.swift */; };
+		3D757B3B2AF24D8400B30748 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B3A2AF24D8300B30748 /* NetworkResult.swift */; };
+		3D757B3E2AF625DA00B30748 /* GauthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B3D2AF625DA00B30748 /* GauthDataModel.swift */; };
+		3D757B412AF6341400B30748 /* PostGauthDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D757B402AF6341400B30748 /* PostGauthDataService.swift */; };
+		3D757B442AF6342C00B30748 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3D757B432AF6342C00B30748 /* Alamofire */; };
 		3D7BC3692A9F8785001AF41E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC3682A9F8785001AF41E /* SnapKit */; };
 		3D7BC36C2A9F878D001AF41E /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 3D7BC36B2A9F878D001AF41E /* Then */; };
 		3D7EC8C72AB7BD4200B2356E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */; };
@@ -113,6 +117,9 @@
 		3D757B1E2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogPurchaseViewController.swift; sourceTree = "<group>"; };
 		3D757B2A2AD7DB8800B30748 /* RankingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingVC.swift; sourceTree = "<group>"; };
 		3D757B2D2ADBE11F00B30748 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		3D757B3A2AF24D8300B30748 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		3D757B3D2AF625DA00B30748 /* GauthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GauthDataModel.swift; sourceTree = "<group>"; };
+		3D757B402AF6341400B30748 /* PostGauthDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGauthDataService.swift; sourceTree = "<group>"; };
 		3D7EC8C62AB7BD4200B2356E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		3D7EC8CE2AB7E29400B2356E /* UIColor+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexColor.swift"; sourceTree = "<group>"; };
 		3D7EC8D12AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGradeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -141,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7BC3692A9F8785001AF41E /* SnapKit in Frameworks */,
+				3D757B442AF6342C00B30748 /* Alamofire in Frameworks */,
 				3D7BC36C2A9F878D001AF41E /* Then in Frameworks */,
 				3D24C7B42AAA000E00954688 /* GAuthSignin in Frameworks */,
 			);
@@ -373,6 +381,32 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		3D757B392AF24D6F00B30748 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3D757B3F2AF633A900B30748 /* Service */,
+				3D757B3C2AF625AE00B30748 /* Model */,
+				3D757B3A2AF24D8300B30748 /* NetworkResult.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3D757B3C2AF625AE00B30748 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D757B3D2AF625DA00B30748 /* GauthDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D757B3F2AF633A900B30748 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3D757B402AF6341400B30748 /* PostGauthDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3D7BC3652A9F8647001AF41E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +486,7 @@
 		3D95C88C2A816E730062E185 /* Stack-Knowledge-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				3D757B392AF24D6F00B30748 /* Network */,
 				3D24C7B52AADA0DA00954688 /* Custom */,
 				3D7BC3652A9F8647001AF41E /* ViewControllers */,
 				3D07508E2A97BBBA0044B83A /* Resources */,
@@ -499,6 +534,7 @@
 				3D7BC3682A9F8785001AF41E /* SnapKit */,
 				3D7BC36B2A9F878D001AF41E /* Then */,
 				3D24C7B32AAA000E00954688 /* GAuthSignin */,
+				3D757B432AF6342C00B30748 /* Alamofire */,
 			);
 			productName = "Stack-Knowledge-iOS";
 			productReference = 3D95C88A2A816E730062E185 /* Stack-Knowledge-iOS.app */;
@@ -576,6 +612,7 @@
 				3D7BC3672A9F8785001AF41E /* XCRemoteSwiftPackageReference "SnapKit" */,
 				3D7BC36A2A9F878D001AF41E /* XCRemoteSwiftPackageReference "Then" */,
 				3D24C7B22AAA000E00954688 /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */,
+				3D757B422AF6342C00B30748 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 3D95C88B2A816E730062E185 /* Products */;
 			projectDirPath = "";
@@ -643,6 +680,7 @@
 				3D757B182AC0011C00B30748 /* ShopCollectionViewCell.swift in Sources */,
 				3D7EC8C72AB7BD4200B2356E /* HomeCollectionViewCell.swift in Sources */,
 				3D95C8922A816E730062E185 /* LoginVC.swift in Sources */,
+				3D757B412AF6341400B30748 /* PostGauthDataService.swift in Sources */,
 				3D757B1A2AC0236B00B30748 /* ShopBottomSheetVC.swift in Sources */,
 				3D9442C62AB86973009BDF68 /* MissionVC.swift in Sources */,
 				3D7EC8D42AB7ED4C00B2356E /* CustomTabBarController.swift in Sources */,
@@ -651,10 +689,12 @@
 				3D7EC8D22AB7E78E00B2356E /* HomeGradeCollectionViewCell.swift in Sources */,
 				3D757B152ABED08000B30748 /* ShopVC.swift in Sources */,
 				3D757B2E2ADBE11F00B30748 /* RankingTableViewCell.swift in Sources */,
+				3D757B3E2AF625DA00B30748 /* GauthDataModel.swift in Sources */,
 				3D757AFD2ABB16AC00B30748 /* CustomStackKnowledgeButton.swift in Sources */,
 				3D757B1F2AC1E60300B30748 /* CustomDialogPurchaseViewController.swift in Sources */,
 				3D757B122ABD58A900B30748 /* CustomDialogTimeOverViewController.swift in Sources */,
 				3D757B1D2AC15FB700B30748 /* MerchandiseCollectionViewCell.swift in Sources */,
+				3D757B3B2AF24D8400B30748 /* NetworkResult.swift in Sources */,
 				3D24C7B72AADA12300954688 /* CustomTopLogoUiView.swift in Sources */,
 				3D95C88E2A816E730062E185 /* AppDelegate.swift in Sources */,
 				3D9442CD2ABAEADD009BDF68 /* WholeMissionCollectionViewCell.swift in Sources */,
@@ -1008,6 +1048,14 @@
 				minimumVersion = 0.0.3;
 			};
 		};
+		3D757B422AF6342C00B30748 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		3D7BC3672A9F8785001AF41E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -1031,6 +1079,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3D24C7B22AAA000E00954688 /* XCRemoteSwiftPackageReference "GAuthSignin-Swift" */;
 			productName = GAuthSignin;
+		};
+		3D757B432AF6342C00B30748 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D757B422AF6342C00B30748 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		3D7BC3682A9F8785001AF41E /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

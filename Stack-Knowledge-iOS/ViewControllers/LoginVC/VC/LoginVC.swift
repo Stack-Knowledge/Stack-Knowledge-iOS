@@ -10,6 +10,8 @@ import GAuthSignin
 
 class LoginVC: BaseVC {
     
+    public var codes = ""
+    
     private let stackKnowledgeBackgroundImage1 = UIImageView().then {
         $0.image = UIImage(named: "StackKnowledgeBackgroundImage1")
     }
@@ -70,21 +72,40 @@ class LoginVC: BaseVC {
         
         gauthButton.snp.makeConstraints {
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(view.bounds.height / 8.3)
-             $0.centerX.equalToSuperview()
-             $0.width.equalTo(view.bounds.width / 1.22)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(view.bounds.width / 1.22)
             $0.height.equalTo(view.bounds.height / 16.88)
         }
     }
     
     func gauthBtnTapped() {
         gauthButton.prepare(
-             clientID: "e6e8ac7857c94ca7a24db504d33369078ab562d7a29a4c9db353204ae8080be9",
-             redirectURI: "https://gauth.co.kr/login/oauth",
-             presenting: self
+            clientID: "e6e8ac7857c94ca7a24db504d33369078ab562d7a29a4c9db353204ae8080be9",
+            redirectURI: "https://port-0-stack-knowledge-server-1xxfe2bllyrfbtt.sel5.cloudtype.app",
+            presenting: self
         ) { code in
-             print(code)
-             self.navigationController?.setViewControllers([HomeVC()], animated: true)
+            print(code)
+            PostGauthDataService.shared.postGauthInfo(code: code) { result in
+                switch result {
+                case .success(let data):
+                    print(data)
+                    self.navigationController?.setViewControllers([CustomTabBarController()], animated: true)
+                    break;
+                case .requestErr(_):
+                    print("requestErr")
+                    break;
+                case .pathErr:
+                    print("pathErr")
+                    break;
+                case .serverErr:
+                    print("serverErr")
+                    break;
+                case .networkFail:
+                    print("networkFail")
+                    break;
+                }
+            }
         }
-   }
+    }
 }
 
